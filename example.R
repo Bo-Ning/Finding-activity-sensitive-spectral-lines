@@ -90,7 +90,7 @@ lambda.candidate <- c(0.1, 0.05, 0.01, 0.005, 0.001, 0.0005, 0.0001)
 v0.candidate <- 10^c(1:10)
 res <- model.fitting(T, activity = y, pixels = X, lambda.candidate, v0.candidate, 
                      counts.per.day, time, missing.period, 
-                     max.iter.step1 = 2, max.iter.step2 = 2, max.iter.step3 = 2)
+                     max.iter.step1 = 30, max.iter.step2 = 20, max.iter.step3 = 100)
 # collect results
 beta.hat <- res$beta.hat
 pstar.hat <- res$pstar.hat
