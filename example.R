@@ -10,6 +10,7 @@ Halpha <- read.table("data/activity-indices/Halpha.txt")$V1
 
 # load outliers
 outlier_index <- read.csv("data/outlier_index.csv")$x
+# choose a activity indices
 activity.index <- scale(BIS[-outlier_index])
 
 # load wavelength
@@ -100,8 +101,10 @@ logpost.lambda <- res$logpost.lambda
 pred.error <- res$pred.error.sum
 
 # save results
-write.csv(sigma.sq_t.res, file = "BIS-result/sigma.sq.csv")
-write.csv(beta.hat, file = "BIS-result/beta.hat.csv")
-write.csv(pstar.hat, file = "BIS-result/pstar.csv")
-write.csv(logpost, file = "BIS-result/logpost.csv")
-write.csv(residual, file = "BIS-result/residual.csv")
+write.csv(sigma.sq_t.res, file = "sigma.sq.csv")
+write.csv(beta.hat, file = "beta.hat.csv")
+write.csv(pstar.hat, file = "pstar.csv")
+write.csv(logpost, file = "logpost.csv")
+write.csv(residual, file = "residual.csv")
+write.csv(logpost.lambda, file = "logpost.lambda")
+write.csv(pred.error, file = "pred.error")
