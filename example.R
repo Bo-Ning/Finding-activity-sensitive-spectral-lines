@@ -1,6 +1,5 @@
 rm(list = ls())
-# setwd("~/Desktop/EMVS-for-TS")
-setwd("~/Desktop/Research/EM-acitvity-lines/")
+setwd("PATH")
 ##################### EMVS ########################
 # load activtiy indices
 S_index <- read.table("data/activity-indices/S-index.txt")$V1
