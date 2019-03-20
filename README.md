@@ -6,4 +6,4 @@ The code folder contains all the functions for the Bayesian variable selection a
 
 The results folder includes the pixels selected using S-index and H alpha, NaD, BIS, FWHM indices. 
 
-The data folder provides the wavelengths, the activity indices, and Julian dates of the alpha Centrauri B dataset. We are unable to upload the normalized spectrum data as the file size is too large. However, a copy is avaiable to obtain by sending us a request at bo.ning@yale.edu or aww@udel.edu.
+The data folder provides the wavelengths, the activity indices, and Julian dates of the alpha Centrauri B dataset. We are unable to upload the normalized spectrum data as the file size is too large. However, a copy is avaliable by sending us a request at bo.ning@yale.edu or aww@udel.edu.
